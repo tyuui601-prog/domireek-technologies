@@ -731,11 +731,7 @@ font-size:34px;
 
 @media(max-width:576px){
 
-.tech-grid{
 
-grid-template-columns:1fr;
-
-}
 
 .section-heading h2{
 
