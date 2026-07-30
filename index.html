@@ -11,229 +11,2204 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
 
-<body class="dark-theme">
-    <nav id="navbar">
-        <div class="container">
+
+
+ <body>
+
+    <!-- ========================= -->
+    <!-- Header / Navigation -->
+    <!-- ========================= -->
+
+ <!-- =========================
+        Header / Navbar
+========================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+
             <a href="#home" class="logo">
+
                 <img src="assets/logo.png" alt="Domireek Technologies Logo">
+
             </a>
+
+            <!-- Navigation -->
+
             <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
                 <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Services</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Work</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#technologies">Technologies</a></li>
+
+                <li><a href="#process">Process</a></li>
+
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
-        </div>
-    </nav>
 
-    <header id="home" class="hero">
-        <div class="container hero-content-grid">
-            <div class="hero-text">
-                <span class="hero-tag reveal">Next-Gen Odoo 19 Solutions</span>
-                <h1 class="reveal">Powering Growth with <span>Odoo Expertise</span></h1>
-                <p class="reveal">Domireek Technologies specializes in building high-performance Odoo ecosystems that
-                    streamline complex business processes.</p>
-                <div class="hero-btns reveal">
-                    <a href="#contact" class="btn primary">Start a Project</a>
-                    <a href="#expertise" class="btn secondary">Our Services</a>
-                </div>
-            </div>
-            <div class="hero-image reveal">
-                <div class="image-wrapper">
-                    <img src="assets/profile.png" alt="Mishan Sharma">
-                </div>
-                <div class="founder-badge">
-                    <span class="founder-role">Founder</span>
-                    <span class="founder-name">Mishan Sharma</span>
-                </div>
-            </div>
-        </div>
-    </header>
+            <!-- Right Side -->
 
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content reveal">
-                    <span class="section-label">Our Story</span>
-                    <h2 class="section-title">Innovating the Odoo Ecosystem</h2>
-                    <p>Founded by Mishan Sharma, an expert developer with a deep focus on <strong>Odoo version
-                            19</strong>. Domireek
-                        Technologies is dedicated to delivering industrial-grade ERP solutions that are both robust and
-                        intuitive.</p>
-                    <p>We combine technical mastery with a <strong>vast professional network</strong> in the Odoo
-                        community to ensure
-                        every module we build is world-class.</p>
-                </div>
-                <div class="about-stats reveal">
-                    <div class="stat-card">
-                        <span>19</span>
-                        <p>Odoo Mastery</p>
-                    </div>
-                    <div class="stat-card">
-                        <span>500+</span>
-                        <p>Expert Network</p>
-                    </div>
-                    <div class="stat-card">
-                        <span>15+</span>
-                        <p>Global Projects</p>
-                    </div>
-                    <div class="stat-card">
-                        <span>100%</span>
-                        <p>Success Rate</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="nav-right">
 
-    <section id="expertise" class="section alt-bg">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Core Services</span>
-                <h2 class="section-title">Industrial Solutions</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-card reveal">
-                    <h3>Implement</h3>
-                    <p>End-to-end Odoo 19 implementation tailored to your business industry.</p>
-                    <ul>
-                        <li>Requirement Analysis & GAP Study</li>
-                        <li>Custom Module Development</li>
-                        <li>Odoo Enterprise & Community Setup</li>
-                        <li>User Training & Support</li>
-                    </ul>
-                </div>
-                <div class="skill-card reveal">
-                    <h3>Migrate</h3>
-                    <p>Seamless transition of your legacy data to the latest Odoo 19 environment.</p>
-                    <ul>
-                        <li>Database Migration Specialists</li>
-                        <li>Data Cleansing & Mapping</li>
-                        <li>Version Upgrades (v14 to v19)</li>
-                        <li>Performance Benchmarking</li>
-                    </ul>
-                </div>
-                <div class="skill-card reveal">
-                    <h3>Integrate</h3>
-                    <p>Connecting your ERP with the world through robust API architectures.</p>
-                    <ul>
-                        <li>Third-party API Sync (REST/XML-RPC)</li>
-                        <li>Payment & Logistics Gateway</li>
-                        <li>Bi-directional Data Flows</li>
-                        <li>External Tool Integration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                <a href="#contact" class="btn-primary">
 
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Journey</span>
-                <h2 class="section-title">The Path to Domireek</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="timeline-content">
-                        <span class="timeline-date">Founded Domireek Technologies | 2026</span>
-                        <h3>Principal Consultant & Lead Developer</h3>
-                        <p>Spearheading the research and development of custom Odoo 19 modules and providing high-level
-                            technical consulting.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-content">
-                        <span class="timeline-date">Odoo Modules Expertise</span>
-                        <h3>Key Modules Delivered to Customers</h3>
-                        <ul>
-                            <li>Sales &amp; CRM — Lead-to-cash pipeline automation</li>
-                            <li>Inventory &amp; Warehouse — Multi-location stock management</li>
-                            <li>Accounting &amp; Invoicing — GST-compliant financial workflows</li>
-                            <li>Manufacturing (MRP) — BoM, work orders &amp; production planning</li>
-                            <li>Purchase — Vendor management &amp; automated procurement</li>
-                            <li>HR &amp; Payroll — Employee lifecycle &amp; attendance tracking</li>
-                            <li>Website &amp; eCommerce — Online storefronts with payment integration</li>
-                            <li>Project &amp; Timesheet — Task tracking &amp; resource allocation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    Get a Quote
 
-    <section id="projects" class="section alt-bg">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">Work</span>
-                <h2 class="section-title">Industrial Case Studies</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-item reveal">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                            <path d="M2 17l10 5 10-5" />
-                            <path d="M2 12l10 5 10-5" />
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <h3>Odoo Auto-Sync API</h3>
-                        <p>Real-time data synchronization between Odoo and external logistics platforms.</p>
-                        <span class="project-tag">API Integration</span>
-                    </div>
-                </div>
-                <div class="project-item reveal">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <path d="M3 9h18" />
-                            <path d="M9 21V9" />
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <h3>Enterprise OWL Dashboard</h3>
-                        <p>High-performance reporting engine built with Odoo's Web Library (OWL).</p>
-                        <span class="project-tag">OWL Framework</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </a>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="contact-box reveal">
-                <span class="section-label">Get in Touch</span>
-                <h2>Let's build the <span>Future</span> of your ERP.</h2>
-                <div class="contact-details">
-                    <a href="mailto:sharmamishan38@gmail.com" class="contact-link">sharmamishan38@gmail.com</a>
-                    <a href="tel:9983135219" class="contact-link">+91 99831 35219</a>
-                    <a href="https://linkedin.com/in/mishan-sharma-7454b3217/" target="_blank"
-                        class="contact-link">LinkedIn Profile</a>
+                <!-- Mobile Menu -->
+
+                <button class="menu-toggle" aria-label="Open Menu"  aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+    <!-- ========================= -->
+    <!-- Trusted Technologies -->
+    <!-- ========================= -->
+
+  <!-- =========================
+    Trusted Technologies
+========================= -->
+
+<section class="trusted-tech" id="home">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Technologies We Work With</span>
+
+            <h2>
+                Modern Technologies for
+                Scalable Digital Products
+            </h2>
+
+            <p>
+                We leverage industry-leading technologies to build secure,
+                scalable and high-performance digital solutions.
+            </p>
+
+        </div>
+
+        <div class="tech-grid">
+
+            <!-- Existing -->
+
+            <div class="tech-card">
+                <img src="assets/odoo_logo.svg" alt="Odoo">
+                <h4>Odoo</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                          <h4>Python</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                          <h4>PostgreSQL</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                          <h4>JavaScript</h4>
+            </div>
+
+            <div class="tech-card">
+          
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+          
+                <h4>HTML5</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
+                          <h4>CSS3</h4>
+            </div>
+
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                          <h4>Git</h4>
+            </div>
+
+            <!-- New -->
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                          <h4>React JS</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+                          <h4>Node.js</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                          <h4>Tailwind CSS</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+                          <h4>Flutter</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" />
+                          <h4>React Native</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                          <h4>MongoDB</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                          <h4>Docker</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg" />
+                          <h4>Azure</h4>
+            </div>
+
+           
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" />
+                          <h4>GraphQL</h4>
+            </div>
+
+         
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                          <h4>Figma</h4>
+            </div>
+
+            <div class="tech-card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" />
+                          <h4>Adobe XD</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ========================= -->
+    <!-- About -->
+    <!-- ========================= -->
+
+   <!-- =========================
+        About Section
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container about-container">
+
+        <!-- Left -->
+
+        <div class="about-left">
+
+            <span class="section-tag">
+                About Domireek Technologies
+            </span>
+
+            <h2>
+                Your Trusted Partner for
+                Digital Innovation
+            </h2>
+
+            <p>
+                Founded in 2026, Domireek Technologies is a growing software
+                development company focused on delivering modern, scalable
+                and business-driven technology solutions.
+            </p>
+
+            <p>
+                We specialize in Odoo ERP Development, Custom Software,
+                Mobile Applications, API Integrations, UI/UX Design and
+                AI-powered business solutions that help organizations
+                streamline operations and accelerate digital transformation.
+            </p>
+
+            <ul class="about-list">
+
+                <li>✔ Custom Software Development</li>
+
+                <li>✔ Odoo ERP Solutions</li>
+
+                <li>✔ Mobile & Web Applications</li>
+
+                <li>✔ Cloud & API Integration</li>
+
+            </ul>
+
+            <a href="#services" class="btn-primary">
+
+                Explore Our Services
+
+            </a>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="about-right">
+
+    <div class="top-cards">
+
+        <div class="info-card">
+
+            <div class="info-icon">🎯</div>
+
+            <h3>Our Mission</h3>
+
+            <p>
+                Deliver innovative software solutions that simplify
+                business operations and enable long-term growth.
+            </p>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-icon">🚀</div>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                Become a trusted technology partner helping businesses
+                adopt smart digital solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="bottom-card">
+
+        <div class="info-card">
+
+            <div class="info-icon">🤝</div>
+
+            <h3>Our Commitment</h3>
+
+            <p>
+                Quality, transparency, innovation and continuous
+                customer support.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+<!-- ======================================== -->
+<!-- What We Do -->
+<!-- ======================================== -->
+
+<section class="what-we-do">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                What We Do
+            </span>
+
+            <h2>
+                Smart Digital Solutions
+                <span>Designed for Modern Businesses</span>
+            </h2>
+
+            <p>
+                We empower startups, SMEs, and enterprises with innovative
+                digital solutions that streamline operations, accelerate growth,
+                and enhance customer experiences.
+            </p>
+
+        </div>
+
+        <div class="what-grid">
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    🏢
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="assets/logo.png" alt="Domireek Technologies Logo">
-            </div>
-            <p>&copy; 2026 Domireek Technologies. All Rights Reserved.</p>
-        </div>
-    </footer>
+                <h3>ERP Solutions</h3>
 
-    <script src="script.js"></script>
+                <p>
+                    End-to-end ERP implementation, customization,
+                    migration, and support.
+                </p>
+
+                <ul>
+                    <li>Odoo Implementation</li>
+                    <li>Workflow Automation</li>
+                    <li>ERP Integration</li>
+                </ul>
+
+            </div>
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    💻
+                </div>
+
+                <h3>Software Development</h3>
+
+                <p>
+                    Scalable web applications built using modern
+                    technologies.
+                </p>
+
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Enterprise Systems</li>
+                    <li>API Development</li>
+                </ul>
+
+            </div>
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    📱
+                </div>
+
+                <h3>Mobile Apps</h3>
+
+                <p>
+                    Android & iOS applications with intuitive
+                    user experiences.
+                </p>
+
+                <ul>
+                    <li>Android Apps</li>
+                    <li>iOS Apps</li>
+                    <li>Flutter Development</li>
+                </ul>
+
+            </div>
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    🤖
+                </div>
+
+                <h3>AI Solutions</h3>
+
+                <p>
+                    AI-powered automation and intelligent
+                    business solutions.
+                </p>
+
+                <ul>
+                    <li>AI Chatbots</li>
+                    <li>Predictive Analytics</li>
+                    <li>Workflow Automation</li>
+                </ul>
+
+            </div>
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    ☁️
+                </div>
+
+                <h3>Cloud Services</h3>
+
+                <p>
+                    Secure cloud deployment and infrastructure
+                    management.
+                </p>
+
+                <ul>
+                    <li>AWS & Azure</li>
+                    <li>Cloud Migration</li>
+                    <li>DevOps</li>
+                </ul>
+
+            </div>
+
+            <div class="what-card">
+
+                <div class="card-icon">
+                    🔒
+                </div>
+
+                <h3>Support & Maintenance</h3>
+
+                <p>
+                    Continuous monitoring, maintenance and
+                    technical support.
+                </p>
+
+                <ul>
+                    <li>24/7 Support</li>
+                    <li>Performance Optimization</li>
+                    <li>Security Updates</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- Our Services -->
+<!-- ======================================== -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Our Services
+            </span>
+
+            <h2>
+                Complete Technology Services
+                <span>Under One Roof</span>
+            </h2>
+
+            <p>
+                We provide end-to-end digital solutions that help businesses automate,
+                innovate, and grow through modern technologies and enterprise applications.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <!-- 1 -->
+
+            <div class="service-card">
+
+                <span class="service-badge">Popular</span>
+
+                <div class="service-icon">🏢</div>
+
+                <h3>Odoo ERP Development</h3>
+
+                <p>
+                    Complete ERP implementation tailored to your business.
+                </p>
+
+                <ul>
+                    <li>Odoo Implementation</li>
+                    <li>Module Development</li>
+                    <li>Workflow Automation</li>
+                    <li>Third-party Integration</li>
+                    <li>Training & Support</li>
+                </ul>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">⚙️</div>
+
+                <h3>ERP Consulting</h3>
+
+                <p>
+                    Strategic consulting to optimize your business operations.
+                </p>
+
+                <ul>
+                    <li>Business Analysis</li>
+                    <li>Gap Assessment</li>
+                    <li>Requirement Gathering</li>
+                    <li>ERP Strategy</li>
+                    <li>Implementation Roadmap</li>
+                </ul>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">💻</div>
+
+                <h3>Software Development</h3>
+
+                <p>
+                    Custom business applications built for scalability.
+                </p>
+
+                <ul>
+                    <li>Enterprise Software</li>
+                    <li>CRM Systems</li>
+                    <li>ERP Applications</li>
+                    <li>API Development</li>
+                    <li>Maintenance</li>
+                </ul>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">📱</div>
+
+                <h3>Mobile App Development</h3>
+
+                <p>
+                    Native and cross-platform mobile applications.
+                </p>
+
+                <ul>
+                    <li>Android Apps</li>
+                    <li>iOS Apps</li>
+                    <li>Flutter Development</li>
+                    <li>UI Optimization</li>
+                    <li>App Maintenance</li>
+                </ul>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="service-card">
+
+                <span class="service-badge">AI</span>
+
+                <div class="service-icon">🤖</div>
+
+                <h3>AI Solutions</h3>
+
+                <p>
+                    Intelligent automation powered by Artificial Intelligence.
+                </p>
+
+                <ul>
+                    <li>AI Chatbots</li>
+                    <li>Business Automation</li>
+                    <li>Predictive Analytics</li>
+                    <li>AI Integration</li>
+                    <li>Machine Learning</li>
+                </ul>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">🔗</div>
+
+                <h3>API Integration</h3>
+
+                <p>
+                    Connect your business applications seamlessly.
+                </p>
+
+                <ul>
+                    <li>Payment Gateway</li>
+                    <li>CRM Integration</li>
+                    <li>ERP Integration</li>
+                    <li>Cloud APIs</li>
+                    <li>Custom REST APIs</li>
+                </ul>
+
+            </div>
+
+            <!-- 7 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">🎨</div>
+
+                <h3>UI / UX Design</h3>
+
+                <p>
+                    Beautiful and user-friendly digital experiences.
+                </p>
+
+                <ul>
+                    <li>Wireframing</li>
+                    <li>UI Design</li>
+                    <li>UX Research</li>
+                    <li>Interactive Prototype</li>
+                    <li>Design System</li>
+                </ul>
+
+            </div>
+
+            <!-- 8 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">☁️</div>
+
+                <h3>Cloud Services</h3>
+
+                <p>
+                    Secure cloud infrastructure and deployment services.
+                </p>
+
+                <ul>
+                    <li>AWS Deployment</li>
+                    <li>Azure Services</li>
+                    <li>Cloud Migration</li>
+                    <li>DevOps</li>
+                    <li>Monitoring</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- Why Choose Us -->
+<!-- ======================================== -->
+
+<section class="why-us" id="why-us">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Why Choose Domireek Technologies
+            </span>
+
+            <h2>
+                Delivering Technology with
+                <span>Trust, Quality & Innovation</span>
+            </h2>
+
+            <p>
+                We don't just develop software—we become your technology partner,
+                helping your business innovate, scale, and succeed with reliable
+                digital solutions.
+            </p>
+
+        </div>
+
+        <div class="choose-grid">
+
+            <!-- 1 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">01</div>
+
+                <div class="choose-icon">📊</div>
+
+                <h3>Business-Driven Approach</h3>
+
+                <p>
+                    Every solution is designed around your business goals,
+                    processes, and long-term growth strategy.
+                </p>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">02</div>
+
+                <div class="choose-icon">📈</div>
+
+                <h3>Scalable Solutions</h3>
+
+                <p>
+                    Our applications are built to scale as your business grows
+                    without compromising performance.
+                </p>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">03</div>
+
+                <div class="choose-icon">💡</div>
+
+                <h3>Modern Technologies</h3>
+
+                <p>
+                    We leverage the latest frameworks, cloud platforms, AI,
+                    and development standards.
+                </p>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">04</div>
+
+                <div class="choose-icon">🤝</div>
+
+                <h3>Transparent Communication</h3>
+
+                <p>
+                    Regular updates, milestone reviews, and complete project
+                    visibility at every stage.
+                </p>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">05</div>
+
+                <div class="choose-icon">✅</div>
+
+                <h3>Quality First</h3>
+
+                <p>
+                    Every product undergoes rigorous testing to ensure
+                    performance, security, and reliability.
+                </p>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="choose-card">
+
+                <div class="choose-number">06</div>
+
+                <div class="choose-icon">🚀</div>
+
+                <h3>Long-Term Partnership</h3>
+
+                <p>
+                    We provide continuous support, maintenance, and future
+                    enhancements beyond project delivery.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================== -->
+<!-- Industries We Serve -->
+<!-- ======================================== -->
+
+<section class="industries" id="industries">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Industries We Serve
+            </span>
+
+            <h2>
+                Industry-Specific Digital Solutions
+                <span>Built for Growth & Innovation</span>
+            </h2>
+
+            <p>
+                We deliver customized software, ERP, AI, and cloud solutions
+                tailored to the unique challenges of different industries.
+            </p>
+
+        </div>
+
+        <div class="industries-grid">
+
+            <!-- Manufacturing -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Manufacturing</span>
+
+                <div class="industry-icon">🏭</div>
+
+                <h3>Manufacturing</h3>
+
+                <p>
+                    Smart manufacturing solutions that improve productivity,
+                    inventory management, and operational efficiency.
+                </p>
+
+                <ul>
+                    <li>Production Planning</li>
+                    <li>Inventory Management</li>
+                    <li>Quality Control</li>
+                    <li>Workflow Automation</li>
+                </ul>
+
+            </article>
+
+            <!-- Healthcare -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Healthcare</span>
+
+                <div class="industry-icon">🏥</div>
+
+                <h3>Healthcare</h3>
+
+                <p>
+                    Secure healthcare systems that enhance patient care and
+                    simplify hospital operations.
+                </p>
+
+                <ul>
+                    <li>Hospital ERP</li>
+                    <li>Patient Management</li>
+                    <li>Appointment Booking</li>
+                    <li>Medical Records</li>
+                </ul>
+
+            </article>
+
+            <!-- Retail -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Retail</span>
+
+                <div class="industry-icon">🛒</div>
+
+                <h3>Retail & eCommerce</h3>
+
+                <p>
+                    Modern retail platforms for seamless sales, inventory,
+                    and customer experiences.
+                </p>
+
+                <ul>
+                    <li>POS Solutions</li>
+                    <li>Inventory Control</li>
+                    <li>CRM Integration</li>
+                    <li>Online Stores</li>
+                </ul>
+
+            </article>
+
+            <!-- Education -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Education</span>
+
+                <div class="industry-icon">🎓</div>
+
+                <h3>Education</h3>
+
+                <p>
+                    Digital learning platforms and educational management
+                    systems for institutions.
+                </p>
+
+                <ul>
+                    <li>Student ERP</li>
+                    <li>Learning Portal</li>
+                    <li>Online Classes</li>
+                    <li>Attendance System</li>
+                </ul>
+
+            </article>
+
+            <!-- Logistics -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Logistics</span>
+
+                <div class="industry-icon">🚚</div>
+
+                <h3>Logistics</h3>
+
+                <p>
+                    Intelligent logistics solutions for transportation,
+                    fleet operations, and supply chains.
+                </p>
+
+                <ul>
+                    <li>Fleet Management</li>
+                    <li>GPS Tracking</li>
+                    <li>Route Planning</li>
+                    <li>Warehouse ERP</li>
+                </ul>
+
+            </article>
+
+            <!-- Hospitality -->
+
+            <article class="industry-card">
+
+                <span class="industry-badge">Hospitality</span>
+
+                <div class="industry-icon">🏨</div>
+
+                <h3>Hospitality</h3>
+
+                <p>
+                    Complete hotel and hospitality management solutions
+                    designed for guest satisfaction.
+                </p>
+
+                <ul>
+                    <li>Hotel Management</li>
+                    <li>Online Booking</li>
+                    <li>Property Management</li>
+                    <li>Guest Experience</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Technologies -->
+<!-- ======================================== -->
+
+
+<section class="technologies" id="technologies">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Technology Stack
+            </span>
+
+            <h2>
+                Technologies That Power
+                <span>Our Digital Solutions</span>
+            </h2>
+
+            <p>
+                We leverage modern frameworks, programming languages,
+                cloud technologies, and enterprise platforms to build
+                secure, scalable, and future-ready applications.
+            </p>
+
+        </div>
+
+        <div class="technology-grid">
+
+            <!-- ERP -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+                        <img src="assets/odoo_logo.svg" alt="Odoo">
+
+                    </div>
+
+                    <div>
+
+                        <h3>ERP Platforms</h3>
+
+                        <span>Enterprise Solutions</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>Odoo ERP</span>
+                    <span>ERP Integration</span>
+                    <span>Workflow Automation</span>
+                    <span>REST API</span>
+
+                </div>
+
+            </div>
+
+            <!-- Frontend -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+          
+                    </div>
+
+                    <div>
+
+                        <h3>Frontend</h3>
+
+                        <span>User Interfaces</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+
+                </div>
+
+            </div>
+
+            <!-- Backend -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain-wordmark.svg" />
+          
+                    </div>
+
+                    <div>
+
+                        <h3>Backend</h3>
+
+                        <span>Business Logic</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>Python</span>
+                    <span>Node.js</span>
+                    <span>REST APIs</span>
+                    <span>Authentication</span>
+
+                </div>
+
+            </div>
+
+            <!-- Database -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          
+                    </div>
+
+                    <div>
+
+                        <h3>Database</h3>
+
+                        <span>Data Management</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>SQLite</span>
+                    <span>Database Design</span>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+          
+                    </div>
+
+                    <div>
+
+                        <h3>Mobile Apps</h3>
+
+                        <span>Cross Platform</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>Flutter</span>
+                    <span>Android</span>
+                    <span>iOS</span>
+                    <span>Responsive UI</span>
+
+                </div>
+
+            </div>
+
+            <!-- DevOps -->
+
+            <div class="technology-card">
+
+                <div class="technology-header">
+
+                    <div class="technology-icon">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+          
+                    </div>
+
+                    <div>
+
+                        <h3>DevOps</h3>
+
+                        <span>Deployment</span>
+
+                    </div>
+
+                </div>
+
+                <div class="technology-list">
+
+                    <span>Docker</span>
+                    <span>Git</span>
+                    <span>CI/CD</span>
+                    <span>Cloud Hosting</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ======================================== -->
+<!-- Development Process -->
+<!-- ======================================== -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Our Process
+            </span>
+
+            <h2>
+                From Idea to Successful
+                <span>Digital Transformation</span>
+            </h2>
+
+            <p>
+                We follow a proven development methodology that ensures
+                transparency, quality, and successful project delivery.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <!-- STEP 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>01</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Discovery</h3>
+
+                    <p>
+
+                        Understanding your business objectives,
+                        challenges and project requirements.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>02</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Planning</h3>
+
+                    <p>
+
+                        Preparing project roadmap,
+                        timeline and architecture.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>03</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>UI / UX Design</h3>
+
+                    <p>
+
+                        Creating wireframes,
+                        prototypes and user experience.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 4 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>04</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Development</h3>
+
+                    <p>
+
+                        Building secure,
+                        scalable and modern applications.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 5 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>05</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Testing</h3>
+
+                    <p>
+
+                        Functional, security,
+                        performance and accessibility testing.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 6 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>06</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Deployment</h3>
+
+                    <p>
+
+                        Launching the solution
+                        with monitoring and optimization.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 7 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+
+                    <span>07</span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <h3>Support</h3>
+
+                    <p>
+
+                        Continuous maintenance,
+                        upgrades and long-term partnership.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ======================================== -->
+<!-- FAQ -->
+<!-- ======================================== -->
+
+<section class="faq" id="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Frequently Asked Questions
+            </span>
+
+            <h2>
+                Everything You Need
+                <span>To Know</span>
+            </h2>
+
+            <p>
+                Find answers to the most common questions about our ERP,
+                software development, and digital transformation services.
+            </p>
+
+        </div>
+
+        <div class="faq-wrapper">
+
+            <!-- 1 -->
+
+            <div class="faq-item active">
+
+                <button class="faq-question">
+
+                    <span>
+                        Do you provide complete Odoo ERP implementation?
+                    </span>
+
+                   
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. We provide complete Odoo implementation,
+                        customization, migration, module development,
+                        integration, training, and long-term support.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Can you build custom ERP and business software?
+                    </span>
+
+                    
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Absolutely. We develop ERP systems, enterprise
+                        applications, CRM solutions, portals, and custom
+                        business software tailored to your workflows.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Which technologies do you specialize in?
+                    </span>
+
+            
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Our expertise includes Odoo, Python, React,
+                        JavaScript, Flutter, Node.js, PostgreSQL,
+                        REST APIs, Docker, and cloud technologies.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Do you provide maintenance after project delivery?
+                    </span>
+
+                   
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. We offer maintenance, security updates,
+                        performance optimization, bug fixes, and feature
+                        enhancements after deployment.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        How long does a software project usually take?
+                    </span>
+
+              
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        The timeline depends on project scope. Small
+                        projects usually take a few weeks, while larger
+                        enterprise solutions may require several months.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        How can we get started with Domireek Technologies?
+                    </span>
+
+                  
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Simply contact us through phone, email, or the
+                        contact form. We'll schedule a consultation,
+                        understand your requirements, and propose the
+                        best solution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================== -->
+<!-- Call To Action -->
+<!-- ======================================== -->
+
+<section class="cta-section" id="cta">
+
+    <div class="container">
+
+        <div class="cta-wrapper">
+
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+
+            <div class="cta-content">
+
+                <span class="section-subtitle">
+
+                    🚀 Let's Build Something Amazing
+
+                </span>
+
+                <h2>
+
+                    Ready to Accelerate
+                    <span>Your Digital Growth?</span>
+
+                </h2>
+
+                <p>
+
+                    Whether you're planning an ERP implementation,
+                    developing custom software, or modernizing your
+                    business with AI and cloud solutions, our experts
+                    are ready to turn your vision into reality.
+
+                </p>
+
+                <div class="cta-features">
+
+                    <div class="cta-feature">
+
+                        <span>✓</span>
+
+                        Free Consultation
+
+                    </div>
+
+                    <div class="cta-feature">
+
+                        <span>✓</span>
+
+                        Tailored Solutions
+
+                    </div>
+
+                    <div class="cta-feature">
+
+                        <span>✓</span>
+
+                        Fast Delivery
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cta-buttons">
+
+                <a href="#contact" class="btn-primary">
+
+                    Get Free Consultation
+
+                </a>
+
+                <a href="tel:+911234567890" class="btn-secondary">
+
+                    Call Us Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- Contact -->
+<!-- ======================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Contact Us
+            </span>
+
+            <h2>
+                Let's Build Something
+                <span>Amazing Together</span>
+            </h2>
+
+            <p>
+                Whether you need ERP implementation, custom software,
+                AI solutions, or digital transformation services,
+                our team is ready to help.
+            </p>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- Left -->
+
+            <div class="contact-info">
+
+                <span class="contact-badge">
+
+                    ⚡ Response Within 24 Hours
+
+                </span>
+
+                <h3>
+
+                    Get In Touch
+
+                </h3>
+
+                <p>
+
+                    Let's discuss your ideas and discover how
+                    Domireek Technologies can help your business grow.
+
+                </p>
+
+                <div class="contact-list">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            📧
+
+                        </div>
+
+                        <div>
+
+                            <h4>Email</h4>
+
+                            <a href="mailto:sharmamishan38@gmail.com">
+
+                                sharmamishan38@gmail.com
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            📞
+
+                        </div>
+
+                        <div>
+
+                            <h4>Phone</h4>
+
+                            <a href="tel:+919983135219">
+
+                                +91 99831 35219
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            💬
+
+                        </div>
+
+                        <div>
+
+                            <h4>WhatsApp</h4>
+
+                            <a href="https://wa.me/919983135219">
+
+                                Chat With Us
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            📍
+
+                        </div>
+
+                        <div>
+
+                            <h4>Location</h4>
+
+                            <p>India</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="#">LinkedIn</a>
+
+                    <a href="#">GitHub</a>
+
+                    <a href="#">Instagram</a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="contact-form">
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="Full Name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="Company Name">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="Phone Number">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            placeholder="Project Subject">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <textarea
+                            rows="6"
+                            placeholder="Tell us about your project..."
+                            required></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn-primary">
+
+                        Send Message →
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ======================================== -->
+<!-- Footer -->
+<!-- ======================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <!-- Company -->
+
+            <div class="footer-column company">
+
+                <img
+                    src="assets/logo-footer.png"
+                    alt="Domireek Technologies"
+                    class="footer-logo">
+
+                <p>
+
+                    Domireek Technologies helps businesses transform
+                    through Odoo ERP, custom software, mobile apps,
+                    AI solutions and digital innovation.
+
+                </p>
+
+                <!-- <div class="footer-social">
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                </div> -->
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#technologies">Technology</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <ul>
+
+                    <li><a href="#">Odoo ERP</a></li>
+
+                    <li><a href="#">Custom Software</a></li>
+
+                    <li><a href="#">Mobile Apps</a></li>
+
+                    <li><a href="#">AI Solutions</a></li>
+
+                    <li><a href="#">Cloud Services</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Technologies -->
+
+            <div class="footer-column">
+
+                <h3>Technologies</h3>
+
+                <ul>
+
+                    <li><a href="#">Python</a></li>
+
+                    <li> <a href="#">React</a></li>
+
+                    <li><a href="#">Flutter</a></li>
+
+                    <li><a href="#">Node.js</a></li>
+
+                    <li><a href="#">PostgreSQL></a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul class="footer-contact">
+
+                    <li>
+
+                        📧 sharmamishan38@gmail.com
+
+                    </li>
+
+                    <li>
+
+                        📞 +91 99831 35219
+
+                    </li>
+
+                    <li>
+
+                        📍 India
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Domireek Technologies. All Rights Reserved.
+
+            </p>
+
+            <a href="#home" class="back-top">
+
+                ↑
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================== -->
+<!-- Scroll To Top -->
+<!-- ======================================== -->
+
+<button
+    id="scrollTopBtn"> <a href="#"> ↑ </a>
+
+   
+
+</button>
+<script src="script.js"></script>
 </body>
-
 </html>

@@ -1,45 +1,32 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Scroll Reveal
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, { threshold: 0.15 });
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
-    revealElements.forEach(el => revealObserver.observe(el));
+// Toggle Menu
+menuToggle.addEventListener("click", () => {
 
-    // Navbar Scroll Effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+    navLinks.classList.toggle("active");
+
+    menuToggle.classList.toggle("active");
+
+    const expanded =
+        menuToggle.getAttribute("aria-expanded") === "true";
+
+    menuToggle.setAttribute("aria-expanded", !expanded);
+
+});
+
+// Close menu after clicking any menu item
+navItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuToggle.classList.remove("active");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
     });
 
-    // Active Link Highlighting
-    const sections = document.querySelectorAll('section, header');
-    const navItems = document.querySelectorAll('.nav-links a');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href').slice(1) === current) {
-                item.classList.add('active');
-            }
-        });
-    });
 });
