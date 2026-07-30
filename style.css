@@ -336,7 +336,7 @@ RIGHT SIDE
 BUTTON
 =========================================*/
 
-.btn-primary{
+.nav-btn{
 
     display:inline-flex;
 
@@ -366,7 +366,7 @@ BUTTON
 
 }
 
-.btn-primary:hover{
+.nav-btn:hover{
 
     transform:translateY(-4px);
 
@@ -444,7 +444,7 @@ RESPONSIVE
 
     }
 
-    .btn-primary{
+    .nav-btn{
 
         display:none;
 
@@ -950,9 +950,37 @@ Checklist
 Button
 =========================================*/
 
-.about-left .btn-primary{
+.about-left .about-btn{
 
     margin-top:10px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+    135deg,
+    #2563EB,
+    #7C3AED);
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 30px rgba(37,99,235,.25);
+
+
 
 }
 
@@ -6398,7 +6426,7 @@ INPUTS
 BUTTON
 =========================================*/
 
-.contact-form .btn-primary{
+.contact-form .form-btn{
 
     width:100%;
 
