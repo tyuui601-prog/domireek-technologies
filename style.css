@@ -622,6 +622,44 @@ RESPONSIVE
     line-height:1.8;
 
 }
+.contact-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+    margin-top: 20px;
+    border-radius:14px;
+
+    background:linear-gradient(
+    135deg,
+    #2563EB,
+    #7C3AED);
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 30px rgba(37,99,235,.25);
+
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.32);
+
+}
 
 /*=========================
 Grid
@@ -977,6 +1015,14 @@ Button
     0 10px 30px rgba(37,99,235,.25);
 
 
+
+}
+.about-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.32);
 
 }
 
@@ -3705,13 +3751,13 @@ ICON
 
     border-radius:20px;
 
-    background:linear-gradient(
+    /* background:linear-gradient(
         135deg,
         var(--primary),
         var(--secondary)
-    );
+    ); */
 
-    box-shadow:0 12px 30px rgba(37,99,235,.20);
+    box-shadow:0 1px 5px var(--primary);
 
     flex-shrink:0;
 
@@ -6449,6 +6495,14 @@ BUTTON
     transition:.35s;
 
 }
+.form-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.32);
+
+}
 
 .contact-form .btn-primary:hover{
 
@@ -7142,25 +7196,10 @@ padding:70px 0 0;
 
 }
 
-.footer-top{
-
-grid-template-columns:1fr;
-
-gap:30px;
-
-padding-bottom:40px;
-
-}
-
-.footer-column{
-
-text-align:center;
-
-}
 
 .footer-column h3::after{
 
-left:50%;
+left:10%;
 
 transform:translateX(-50%);
 
