@@ -32,6 +32,64 @@ updatePageMotion();
 window.addEventListener('scroll', requestPageMotion, { passive: true });
 window.addEventListener('resize', requestPageMotion, { passive: true });
 
+// Fine-pointer enhancements stay desktop-only and never affect touch screens.
+const finePointer = window.matchMedia('(pointer: fine) and (min-width: 981px)');
+const cursorOrbit = document.querySelector('.cursor-orbit');
+
+if (finePointer.matches && cursorOrbit) {
+  let cursorX = -50;
+  let cursorY = -50;
+  let cursorFrame;
+
+  const paintCursor = () => {
+    cursorOrbit.style.transform = `translate3d(${cursorX - cursorOrbit.offsetWidth / 2}px, ${cursorY - cursorOrbit.offsetHeight / 2}px, 0)`;
+    cursorFrame = undefined;
+  };
+
+  document.addEventListener('pointermove', (event) => {
+    cursorX = event.clientX;
+    cursorY = event.clientY;
+    if (!cursorFrame) cursorFrame = requestAnimationFrame(paintCursor);
+  }, { passive: true });
+
+  document.addEventListener('pointerover', (event) => {
+    cursorOrbit.classList.toggle('is-active', Boolean(event.target.closest('a, button, summary')));
+  });
+  document.documentElement.addEventListener('mouseleave', () => {
+    cursorOrbit.style.opacity = '0';
+  });
+  document.documentElement.addEventListener('mouseenter', () => {
+    cursorOrbit.style.opacity = '1';
+  });
+
+  const pointerSurfaces = document.querySelectorAll(
+    '.service-card:not(.odoo-service):not(.ai-service), .industry-grid article, .why-cards article, .stack-card:not(.stack-odoo), .process-grid li:not(:last-child)'
+  );
+  pointerSurfaces.forEach((surface) => {
+    surface.classList.add('pointer-surface');
+    surface.addEventListener('pointermove', (event) => {
+      const bounds = surface.getBoundingClientRect();
+      surface.style.setProperty('--pointer-x', `${event.clientX - bounds.left}px`);
+      surface.style.setProperty('--pointer-y', `${event.clientY - bounds.top}px`);
+    }, { passive: true });
+  });
+
+  document.querySelectorAll('.button, .nav-cta, .footer-button').forEach((button) => {
+    button.classList.add('magnetic');
+    button.addEventListener('pointermove', (event) => {
+      const bounds = button.getBoundingClientRect();
+      const x = (event.clientX - bounds.left - bounds.width / 2) * 0.12;
+      const y = (event.clientY - bounds.top - bounds.height / 2) * 0.16;
+      button.style.setProperty('--magnetic-x', `${x}px`);
+      button.style.setProperty('--magnetic-y', `${y}px`);
+    }, { passive: true });
+    button.addEventListener('pointerleave', () => {
+      button.style.setProperty('--magnetic-x', '0px');
+      button.style.setProperty('--magnetic-y', '0px');
+    });
+  });
+}
+
 menuButton.addEventListener('click', () => {
   const open = menu.classList.toggle('active');
   menuButton.classList.toggle('active', open);
@@ -91,6 +149,86 @@ const revealGroups = [
   '.contact-copy',
   '.contact-form'
 ];
+
+// Decorative floating materials occupy unused space without adding content.
+const ambientSets = [
+  ['.hero', [
+    ['tile', '5%', '31%', '34px', '.45', '10s', '-2s', '14deg'],
+    ['ring', '92%', '24%', '46px', '.38', '12s', '-5s'],
+    ['dot', '54%', '19%', '10px', '.58', '7s', '-3s'],
+    ['spark', '47%', '72%', '32px', '.42', '9s', '-1s'],
+    ['hex', '57%', '83%', '28px', '.34', '11s', '-4s'],
+    ['signal', '76%', '10%', '34px', '.28', '13s', '-7s']
+  ]],
+  ['#about', [
+    ['capsule', '4%', '77%', '40px', '.35', '13s', '-6s', '-16deg'],
+    ['ring', '91%', '14%', '34px', '.3', '10s', '-2s'],
+    ['dot', '84%', '84%', '9px', '.48', '8s', '-4s']
+  ]],
+  ['#services', [
+    ['arc', '94%', '7%', '58px', '.34', '13s', '-4s'],
+    ['diamond', '3%', '52%', '24px', '.3', '10s', '-2s'],
+    ['beads', '86%', '91%', '30px', '.32', '12s', '-6s'],
+    ['cube', '7%', '11%', '28px', '.3', '12s', '-5s', '11deg']
+  ]],
+  ['#technologies', [
+    ['tile', '92%', '18%', '38px', '.4', '11s', '-4s', '-12deg'],
+    ['spark', '5%', '64%', '36px', '.35', '8s', '-2s'],
+    ['dot', '48%', '8%', '8px', '.45', '7s', '-5s'],
+    ['hex', '84%', '76%', '32px', '.3', '13s', '-6s'],
+    ['signal', '11%', '13%', '28px', '.25', '12s', '-3s']
+  ]],
+  ['#why-us', [
+    ['ring', '3%', '18%', '42px', '.28', '12s', '-5s'],
+    ['capsule', '88%', '82%', '34px', '.3', '14s', '-7s', '18deg'],
+    ['spark', '94%', '28%', '30px', '.36', '9s', '-3s']
+  ]],
+  ['#industries', [
+    ['diamond', '94%', '12%', '28px', '.32', '11s', '-5s'],
+    ['arc', '2%', '74%', '46px', '.28', '14s', '-7s'],
+    ['beads', '83%', '92%', '28px', '.3', '10s', '-3s']
+  ]],
+  ['#process', [
+    ['tile', '3%', '75%', '30px', '.3', '12s', '-2s', '9deg'],
+    ['dot', '94%', '15%', '10px', '.42', '8s', '-4s']
+  ]],
+  ['#faq', [
+    ['arc', '92%', '16%', '52px', '.28', '15s', '-5s'],
+    ['diamond', '4%', '80%', '22px', '.26', '11s', '-3s'],
+    ['spark', '84%', '84%', '34px', '.3', '9s', '-4s']
+  ]],
+  ['#contact', [
+    ['beads', '90%', '8%', '28px', '.28', '12s', '-6s'],
+    ['diamond', '3%', '76%', '24px', '.24', '10s', '-2s']
+  ]]
+];
+
+ambientSets.forEach(([selector, materials]) => {
+  const section = document.querySelector(selector);
+  if (!section) return;
+  const layer = document.createElement('div');
+  layer.className = 'ambient-materials';
+  layer.setAttribute('aria-hidden', 'true');
+  materials.forEach(([type, x, y, size, opacity, speed, delay, rotate = '0deg'], index) => {
+    const material = document.createElement('i');
+    material.className = `ambient-material ${type}`;
+    material.style.cssText = `--x:${x};--y:${y};--size:${size};--opacity:${opacity};--speed:${speed};--delay:${delay};--rotate:${rotate};--drift:${10 + index * 4}px`;
+    layer.append(material);
+  });
+  section.prepend(layer);
+
+  if (window.matchMedia('(pointer: fine) and (min-width: 981px)').matches) {
+    section.addEventListener('pointermove', (event) => {
+      const bounds = section.getBoundingClientRect();
+      const x = ((event.clientX - bounds.left) / bounds.width - .5) * -10;
+      const y = ((event.clientY - bounds.top) / bounds.height - .5) * -8;
+      layer.style.transform = `translate3d(${x}px,${y}px,0)`;
+    }, { passive: true });
+    section.addEventListener('pointerleave', () => {
+      layer.style.transform = 'translate3d(0,0,0)';
+    });
+  }
+});
 
 const revealItems = document.querySelectorAll(revealGroups.join(','));
 revealItems.forEach((item) => item.classList.add('reveal-ready'));

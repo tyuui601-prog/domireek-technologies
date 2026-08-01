@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" fill="none">
+  <style>
+    .trace{stroke-dasharray:22 12;animation:circuitFlow 9s linear infinite}
+    .nodes circle{transform-box:fill-box;transform-origin:center;animation:nodePulse 3s ease-in-out infinite}
+    .nodes circle:nth-child(2n){animation-delay:-1s}.nodes circle:nth-child(3n){animation-delay:-2s}
+    .locks{animation:lockGlow 4s ease-in-out infinite}
+    @keyframes circuitFlow{to{stroke-dashoffset:-170}}
+    @keyframes nodePulse{0%,100%{opacity:.38;transform:scale(.72)}50%{opacity:.9;transform:scale(1.16)}}
+    @keyframes lockGlow{0%,100%{opacity:.5}50%{opacity:.82}}
+    @media (prefers-reduced-motion:reduce){.trace,.nodes circle,.locks{animation:none}}
+  </style>
+  <g class="trace" stroke="#a40362" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".2">
+    <path d="M42 374h104l44-44v-92l73-43 73 43v86l-41 24h-59v-79l27-16 27 16v39"/>
+    <path d="M176 389h181l48-48V220l91-53 92 53v110l-53 31h-76v-101l37-21 37 21v52"/>
+    <path d="M347 399h276l53-53V194l109-63 109 63v144l-45 45"/>
+    <path d="M611 388h94l31-31V244l54-31 54 31v97"/>
+    <path d="M777 129V72l38-38h67"/>
+    <path d="M842 153V92l34-34v-42"/>
+    <path d="M899 177V76l51-51"/>
+    <path d="M933 338V187l35-20"/>
+    <path d="M96 374v-49l34-34"/>
+    <path d="M66 281h65l29-29"/>
+    <path d="M393 201v-65l37-37"/>
+    <path d="M430 99h72l29-29h83"/>
+  </g>
+  <g class="nodes" fill="#a40362" opacity=".28">
+    <circle cx="42" cy="374" r="7"/><circle cx="96" cy="325" r="7"/><circle cx="66" cy="281" r="7"/>
+    <circle cx="430" cy="99" r="7"/><circle cx="614" cy="70" r="7"/><circle cx="777" cy="72" r="7"/>
+    <circle cx="882" cy="34" r="7"/><circle cx="876" cy="16" r="7"/><circle cx="950" cy="25" r="7"/>
+  </g>
+  <g stroke="#a40362" stroke-width="3" opacity=".2">
+    <circle cx="130" cy="291" r="31"/><circle cx="531" cy="70" r="10"/><circle cx="815" cy="34" r="10"/>
+  </g>
+  <g class="locks">
+    <path d="M258 307v-24a14 14 0 1 1 28 0v24l-7 7v15h-14v-15l-7-7Z" fill="#a40362" opacity=".26"/>
+    <path d="M489 310v-30a16 16 0 1 1 32 0v30l-8 8v18h-16v-18l-8-8Z" fill="#a40362" opacity=".26"/>
+    <path d="M778 319v-25a14 14 0 1 1 28 0v25l-7 7v15h-14v-15l-7-7Z" fill="#a40362" opacity=".26"/>
+  </g>
+</svg>
